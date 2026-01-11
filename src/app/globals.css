@@ -3,24 +3,72 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-orange: #FF8D4D;
+  --primary-green: #138808;
+  --primary-blue: #3FB3F5;
+  --text-dark: #1a1a1a;
+  --text-gray: #666666;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary-orange: var(--primary-orange);
+  --color-primary-green: var(--primary-green);
+  --color-primary-blue: var(--primary-blue);
+  --font-sans: var(--font-jakarta);
+  --font-mono: var(--font-manrope);
+  --font-poppins: var(--font-poppins);
 }
 
 body {
-  background: var(--background);
+  background: #F5F4F1;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+.brush-stroke-orange {
+  background: linear-gradient(90deg, #FF9933 0%, #FF9933 100%);
+  padding: 0 8px;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.brush-stroke-green {
+  background: linear-gradient(90deg, #138808 0%, #138808 100%);
+  padding: 0 8px;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f0f0f0;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
