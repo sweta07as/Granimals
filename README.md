@@ -4,7 +4,7 @@ A responsive landing page for Granimals - a physiotherapy and rehabilitation ser
 
 ## Project Overview
 
-This is a marketing landing page built for Granimals, featuring an Independence Day promotional campaign offering 15% off on all rehab programs. The page is designed to convert visitors into consultation bookings.
+This is a responsive landing page for Granimals based on the provided Figma design. The task involves converting the design into a pixel-perfect, responsive web page using Next.js and Tailwind CSS.
 
 ## Features
 
